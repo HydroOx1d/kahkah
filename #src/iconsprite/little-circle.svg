@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 18" width="27" height="18">
+	<title>Web 1920 – 4</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M10.25 17.5C5.41 17.5 1.5 13.59 1.5 8.75C1.5 3.91 5.41 0 10.25 0C15.09 0 19 3.91 19 8.75C19 13.59 15.09 17.5 10.25 17.5Z" />
+		</clipPath>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Web 1920 – 4">
+		<g id="Header">
+			<g id="Группа масок 2" clip-path="url(#cp1)">
+				<path id="ilon-mask-nazval-top-svoih-lyubimyh-igr_22-06-20-13-10-27" d="M0 0L27 0L27 17.5L0 17.5L0 0Z" />
+			</g>
+		</g>
+	</g>
+</svg>

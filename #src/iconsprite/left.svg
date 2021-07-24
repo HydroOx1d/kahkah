@@ -1,0 +1,17 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+	<title>Web 1920 – 4</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.698;fill: #ffffff } 
+		.shp1 { opacity: 0.6;fill: #00733b } 
+		.shp2 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-width: 1.5 } 
+	</style>
+	<g id="Web 1920 – 4">
+		<g id="Сгруппировать 56">
+			<path id="Эллипс 121" class="shp0" d="M10.75 21.5C4.8 21.5 0 16.69 0 10.75C0 4.81 4.8 0 10.75 0C16.69 0 21.5 4.81 21.5 10.75C21.5 16.69 16.69 21.5 10.75 21.5Z" />
+			<path id="Эллипс 115" class="shp1" d="M10.75 19.5C5.91 19.5 2 15.59 2 10.75C2 5.91 5.91 2 10.75 2C15.59 2 19.5 5.91 19.5 10.75C19.5 15.59 15.59 19.5 10.75 19.5Z" />
+			<path id="Линия 31" class="shp2" d="M12.03 6.72L7.75 11L12.03 6.72Z" />
+			<path id="Линия 32" class="shp2" d="M12.03 15.28L7.75 11L12.03 15.28Z" />
+		</g>
+	</g>
+</svg>

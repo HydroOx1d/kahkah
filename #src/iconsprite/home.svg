@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 10" width="11" height="10">
+	<title>Web 1920 – 4</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Web 1920 – 4">
+		<g id="Header">
+			<g id="icon">
+				<path id="home" class="shp0" d="M10.26 4.9L5.85 0.64C5.75 0.55 5.63 0.5 5.5 0.5C5.37 0.5 5.25 0.55 5.15 0.64L0.73 4.9C0.59 5.04 0.6 5.16 0.63 5.22C0.65 5.28 0.72 5.38 0.93 5.38L1.42 5.38L1.42 9.16C1.42 9.56 1.76 9.89 2.15 9.89L4.39 9.89L4.39 7.32L6.55 7.32L6.55 9.89L8.85 9.89C9.24 9.89 9.56 9.55 9.56 9.16L9.56 5.38L10.07 5.38C10.28 5.38 10.35 5.28 10.37 5.22C10.4 5.16 10.41 5.04 10.26 4.9Z" />
+			</g>
+		</g>
+	</g>
+</svg>

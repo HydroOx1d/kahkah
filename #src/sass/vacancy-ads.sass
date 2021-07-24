@@ -1,0 +1,89 @@
+.ads
+    &__inner
+        // display: flex
+        // flex-direction: column
+        // align-items: center
+        // justify-content: center
+    &__category
+        margin: 20px auto
+    &__block
+        width: 650px
+        margin-bottom: 20px
+        @include media("max", "lg")
+            width: 100%
+    &__content
+        background-color: #fff
+        padding: 5px 20px
+        border-radius: 15px
+        position: relative
+        &--head
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @include media("max", "sm")
+                flex-direction: column
+                align-items: start
+        &--author
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 230px
+            @include media("max", "sm")
+                width: 200px
+            p
+                font-weight: 500
+                font-size: 14px
+                z-index: 10
+            span
+                font-weight: 600
+                z-index: 10
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 260px
+                height: 50px
+                border-top-left-radius: 15px
+                border-bottom-right-radius: 15px
+                background-color: #cdded5
+                @include media("max", "sm")
+                    width: 230px
+        &--date
+            p
+                font-weight: 600
+                font-size: 13px
+        &--text
+            font-weight: 500
+            font-size: 16px
+            p
+                margin: 5px 0 10px 0
+        &--geo
+            span
+                font-size: 14px
+        &--foot
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 10px 0
+        &--icons
+            font-size: 22px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 80px
+        &--save
+            font-size: 22px
+        &--sum
+            display: flex
+            justify-content: flex-end
+            margin-top: -17px
+            @include media("max", "sm")
+                margin-top: 5px 
+                justify-content: flex-start
+
+
+    &__fx
+        display: flex
+        justify-content: space-between
+        flex-flow: row wrap

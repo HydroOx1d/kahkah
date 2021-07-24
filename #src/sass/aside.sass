@@ -1,0 +1,37 @@
+.aside
+    position: absolute
+    top: 100%
+    right: 0%
+    opacity: 0
+    visibility: hidden
+    width: 230px
+    height: 230px
+    background-color: #fff
+    border-radius: 10px
+    transition: .2s ease
+    z-index: 1000
+    @include media("max", 'xl') 
+        width: 180px
+        height: 200px
+    @include media("max", 'md')
+        display: none
+        
+    &__text
+        display: flex
+        justify-content: space-between
+        font-size: 14px
+        font-weight: 500
+        &--cont
+            padding-left: 5px
+        &--mess
+            padding-right: 5px
+
+    img
+        max-width: 100px
+        margin: 30px 0 0 50px
+        opacity: .6
+        @include media("max", "xl") 
+            margin: 30px 0 0 45px
+    &.active
+        opacity: 1
+        visibility: visible

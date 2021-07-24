@@ -1,0 +1,302 @@
+.profile
+    &__post
+
+        @include media("max", "md")
+            margin: 20px auto
+    &__inner
+        width: 45rem
+        margin: 0 auto
+        @include media("max", "lg")
+            width: 100%
+            margin-top: 20px
+    &__bg
+        width: 45rem
+        height: 12rem
+        margin: 0 auto
+        background-image: url("../img/profile-bg.jpg")
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 15px
+        position: relative
+        @include media("max", "md")
+            width: 100%
+    &__public
+        position: absolute
+        bottom: 5%
+        right: 2%
+        background-color: #ffffffc4
+        width: 400px
+        height: 40px
+        border-radius: 20px
+        &--ico
+            background-color: rgb(0, 115, 59)
+            border: none
+            width: 35px
+            height: 35px
+            margin-top: 2.5px
+            cursor: pointer
+            border-radius: 50%
+            color: #fff
+            margin-left: 5px
+        &--btn
+            background-color: rgb(0, 115, 59)
+            border: none
+            cursor: pointer
+            padding: 8px 10px
+            border-radius: 20px
+            color: #fff
+            font-size: 16px
+            font-weight: 600
+            margin-left: 173px
+
+            @include media("max", "md")
+                margin-left: 0
+                float: right
+                margin-top: 3px
+                margin-right: 4px
+        @include media("max", "md")
+            top: 10%
+            width: 100%
+            right: 0
+    &__section
+        width: 45rem
+        height: 100%
+        display: grid
+        grid-template-columns: 1fr 26rem
+        gap: 0px 0px
+
+        @include media("max", "md")
+            display: flex
+            flex-direction: column
+            width: 100%
+    &__aside
+        padding: 40px 10px 0
+        width: 100%
+        &--image
+            display: flex
+            justify-content: space-between
+            flex-flow: row wrap
+            img
+                display: block
+                max-width: 130px
+                height: 120px
+                border-radius: 10px
+                margin-bottom: 20px
+        &--addImg
+            display: inline-block
+            width: 130px
+            height: 120px
+            border-radius: 10px
+            border: none
+            background-color: rgb(0, 115, 59)
+            margin-bottom: 20px
+            color: #fff
+            font-size: 18px
+            cursor: pointer
+        &--img
+            position: absolute
+            bottom: -70%
+            left: -225px
+            @include media("max", "md")
+                bottom: -160px
+                left: 40%
+            @include media("within", "sm")
+                bottom: -160px
+                left: 30%
+            @include media("max", "xs")
+                bottom: -160px
+                left: 26%
+            img
+                display: block
+                border-radius: 100%
+                max-width: 150px
+                height: 150px
+        &--edit
+            color: #373737
+            width: 30px
+            height: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            cursor: pointer
+            position: absolute
+            bottom: 20%
+            left: 85%
+            background-color: #fff
+
+        &--name
+            text-align: center
+            h2
+                font-size: 18px
+        &--desc
+            font-weight: 400
+    &__info
+        &--locat
+            display: flex
+            align-items: center
+        &--country
+            font-weight: 500
+            margin-left: 15px
+            span
+                font-weight: 700
+                margin-left: 5px
+                color: rgb(0, 115, 59)
+        &--prof
+            display: flex
+            align-items: center
+        &--spec
+            font-weight: 500
+            margin: 0px 15px
+            span
+                font-weight: 700
+                margin-left: 5px
+                color: rgb(0, 115, 59)
+        &--edit
+            display: flex
+            align-items: center
+        &--red
+            margin-left: 15px
+            cursor: pointer
+            color: rgb(0, 115, 59)
+            font-weight: 600
+        &--title
+            font-weight: 500
+            margin-left: 5px
+            margin: 10px 0
+        &--contacts
+            display: flex
+            justify-content: space-between
+            a
+                background-color: #cdded5
+                width: 35px
+                height: 35px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+        &--follow
+            background-color: #fff
+            padding: 10px
+            margin-top: 30px
+        &--follows
+            display: flex
+            justify-content: space-between
+            a
+                background-color: #373737
+                width: 35px
+                height: 35px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                &:last-child
+                    color: #fff
+                    font-size: 22px
+        &--followers
+            // padding-top: 10px
+            display: flex
+            justify-content: space-between
+            a
+                background-color: #a4a4a4
+                width: 35px
+                height: 35px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+
+    &__main
+        padding: 20px 10px
+        &--follow
+            display: flex
+            flex-direction: column
+            align-items: center
+            span
+                font-size: 22px
+            p
+                margin: 0
+                font-weight: 500
+        &--input
+            display: flex
+        &--img
+            max-width: 100%
+        &--btn
+            display: inline-block
+            width: 205px
+            border: none
+            outline: none
+            font-size: 18px
+            background-color: #fff
+            margin-top: -3px
+            cursor: pointer
+
+            @include media("max", "md")
+                width: 100%
+        &--form
+            margin-top: 20px
+            textarea
+                display: inline-block
+                width: 100%
+                height: 105px
+                font-size: 16px
+                resize: none
+                border: none
+                outline: none
+                padding: 10px
+                border-radius: 10px 10px 0 0
+    &__follows
+        display: flex
+        justify-content: space-between
+        
+
+.filupp > input[type="file"]
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip: rect(0,0,0,0)
+    border: 0
+
+.filupp
+    position: relative
+    background: #fff
+    display: block
+    padding: 1em
+    font-size: 1em
+    width: 50%
+    height: 3.5em
+    color: #373737
+    cursor: pointer
+    box-shadow: 0 1px 3px darken(#fff,10)
+    margin-top: -3px
+
+.filupp:before
+    content: ""
+    position: absolute
+    top: 1.5em
+    right: .75em
+    width: 2em
+    height: 1.25em
+    border-top: 0
+    text-align: center
+
+.filupp:after
+    content: "\279c"
+    transform: rotate(90deg)
+    position: absolute
+    top: .97em
+    font-size: 1.8em
+    color: #373737
+    line-height: 0
+
+    @include media("max", "md")
+        width: 100%
+        display: none
+
+.filupp-file-name
+    width: 75%
+    font-weight: 500

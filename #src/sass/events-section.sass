@@ -1,0 +1,110 @@
+.card
+    &__inner
+        width: 50rem
+        margin: 0 auto
+        @include media("max", "md")
+            width: 100%
+    &__category
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 20px
+        @include media("max", "sm")
+            flex-direction: column
+
+        &--text
+            font-weight: 500
+            font-size: 15px
+            margin-right: 40px
+            cursor: pointer
+            &.active
+                color: rgb(0, 115, 59)
+                font-weight: 600
+
+    &__block
+        display: flex
+        justify-content: space-between  
+        align-items: center
+
+        flex-flow: row wrap
+        margin: 0 auto
+        @include media("max", "sm")
+            width: 100%
+            
+            max-width: 350px   
+        @include media("within", "md") 
+            width: 400px
+            display: flex
+        &--content
+            border-radius: 10px
+            background-color: #fff
+            width: 390px
+            margin-top: 20px
+            @include media("max", "sm")
+                width: 100%
+            img
+                max-width: 100%
+                border-radius: 10px 10px 0 0
+        &--btn
+            width: 180px
+            height: 35px
+            border-radius: 20px
+            border: none
+            background-color: transparent
+            border: 3px solid rgb(0, 115, 59)
+            font-size: 16px
+            cursor: pointer
+            @include media("max", "sm")
+                font-size: 12px
+                width: 150px
+        &--togo
+            width: 100px
+            color: #fff
+            background-color: rgb(0, 115, 59)
+            @include media("max", "sm")
+                font-size: 12px
+                width: 100px
+        &--bid
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 5px 15px
+        &--desc
+            padding: 10px 15px 0
+        &--title
+            font-weight: 600
+            font-size: 20px
+            padding: 10px 15px 0
+        &--df
+            display: flex
+            align-items: center
+            justify-content: space-between
+            span
+                font-size: 16px
+                font-weight: 500
+                margin: 0
+            p
+                font-size: 15px
+                font-weight: 500 
+                margin: 5px 0
+            
+
+.bef-af
+    position: relative
+    &::before,
+    &::after
+        content: "",
+        position: absolute
+        width: 3px
+        height: 25px
+        background-color: #cdded5
+
+        @include media("max", "sm")
+            opacity: 0
+    &::before
+        top: 0
+        left: -20px
+    &::after
+        top: 0
+        right: -20px
+                

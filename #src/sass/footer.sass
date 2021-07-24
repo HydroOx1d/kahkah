@@ -1,0 +1,39 @@
+.footer
+    height: 200px
+    background-image: url("../img/footer-bg.png")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    @include media("max", "lg")
+        background-size: 0% 0%
+        background-image: none
+        background-color: #cdded5
+    @include media ("max", "xs")
+        height: 21rem
+    @include media("within", "sm")
+        height: 24rem
+    &__container
+        max-width: 880px
+        margin: 100px auto 20px
+        padding: 0 15px
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 70px
+        @include media("max", "xs")
+            flex-direction: column
+            padding-top: 20px
+        @include media("within", "sm")
+            max-width: 100%
+            flex-flow: row wrap
+            
+    &__info
+        font-size: 12px
+        @include media("max", "md")
+            font-size: 10px
+            margin-bottom: 10px
+        &--title
+            font-weight: 600
+        &--text
+            font-weight: 500
