@@ -54,19 +54,22 @@ if(loginModal, aside) {
 
 let navLink = document.querySelectorAll(".header__nav--link")
 
-navLink.forEach(e => {
-  return e.addEventListener("click", ()=>{
-    clearActiveClass()
-    e.classList.add("active")
-  })
-})
+// navLink.forEach(e => {
+//   return e.addEventListener("click", ()=>{
+//     clearActiveClass()
+//     e.classList.add("active")
+//   })
+// })
 
-function clearActiveClass() {
-  navLink.forEach(e => {
-    e.classList.remove("active")
-  })
-}
+// function clearActiveClass() {
+//   navLink.forEach(e => {
+//     e.classList.remove("active")
+//   })
+// }
 
+$(navLink).filter(function(){
+  return this.href === location.href;
+}).addClass('active');
 
 let loginAcc = document.querySelector(".header__acc--login");
 let loginMenu = document.querySelector(".header__menu");

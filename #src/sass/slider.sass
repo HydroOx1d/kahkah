@@ -1,6 +1,6 @@
 .slider
     margin: 50px 0 0 0
-    @include media("max", "sm")
+    @include media("max", "md")
         margin: 80px 0 0 0
     &__inner
         max-width: 800px
@@ -12,40 +12,58 @@
             padding: 10px   
         &--human
             position: absolute
-            bottom: -4%
-            left: 33%   
+            top: 10px
+            left: 0
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: flex-end
+
+
             @include media("max", "lg")
                 position: insert
+                top: 10px
                 left: 0
                 right: 0
-                width: 70px
+                width: 100% 
                 margin-left: auto
                 margin-right: auto
-                margin-bottom: 3px
+                // margin-bottom: 5px
             // @include media("max", "md") 
             //     left:36%
             //     bottom: -3.5%
             @include media("max", "sm")
                 position: insert
+                top: 10px
                 left: 0
                 right: 0
-                width: 70px
+                width: 100%
                 margin-left: auto
                 margin-right: auto
-                margin-bottom: 10px
+                margin-bottom: 12px
+            // @include media("max", "xs")
             
             img
-                display: block
-                width: 70px
-                height: 70px
-                border-radius: 50%
+                // display: inline-block
+                border-radius: 100%
+                width: 80px
+                height: 80px
+                @include media("max", "md")  
+                    width: 80px
+                    height: 80px
                 @include media("within", "sm")  
-                    width: 85px
-                    height: 75px
+                    width: 80px
+                    height:80px
             i
                 position: absolute
-                top: 45%
-                left: 43%
+                top: -30px
+                left: 0
+                width: 100%
+                height: 100%
+                display: flex
+                justify-content: center
+                align-items: flex-end
                 font-size: 20px
                 color: rgba(255, 255, 255, 0.671)
                 
